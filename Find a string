@@ -1,0 +1,25 @@
+s = "ABCDCDC"
+ss = "CDC"
+
+# for i in range(0, len(s)):
+#     print (s[i])
+#     for j in range(0,len(ss)):
+#         print(ss[j])
+
+def count_substring(string, sub_string):
+    count = 0
+    found = string.find(sub_string)
+    while found != -1:
+        count += 1
+        found = string.find(sub_string, found + 1)
+        print(string.find(sub_string))
+        print(found + 1)
+        #print(found)
+    return count
+
+if __name__ == '__main__':
+    string = s.strip()
+    sub_string = ss.strip()
+    
+    count = count_substring(string, sub_string)
+    #print(count)
