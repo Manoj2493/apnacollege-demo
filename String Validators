@@ -1,0 +1,28 @@
+a = "qA2"
+
+if __name__ == '__main__':
+    s = a
+    str_alnum = False
+    str_alpha = False
+    str_digit = False
+    str_lower = False
+    str_upper = False
+    
+    for i in s:
+        if i.isalnum():
+            str_alnum = True
+        if i.isalpha():
+            str_alpha = True
+        if i.isdigit():
+            str_digit = True
+        if i.islower():
+            str_lower = True
+        if i.isupper():
+            str_upper = True
+
+    print(str_alnum)
+    print(str_alpha)
+    print(str_digit)
+    print(str_lower)
+    print(str_upper)
+    
